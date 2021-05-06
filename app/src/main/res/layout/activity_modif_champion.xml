@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModifChampion">
+
+    <EditText
+        android:id="@+id/nomChampion"
+        android:layout_width="174dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:text="nom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/descriptionChampion"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="52dp"
+        android:text="description"
+        app:layout_constraintTop_toBottomOf="@+id/nomChampion"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/competenceA"
+        android:layout_width="174dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="23dp"
+        android:text="competenceA"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionChampion"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/competenceZ"
+        android:layout_width="174dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="23dp"
+        android:text="competenceZ"
+        app:layout_constraintTop_toBottomOf="@+id/competenceA"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/competenceE"
+        android:layout_width="174dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="23dp"
+        android:text="competence E"
+        app:layout_constraintTop_toBottomOf="@+id/competenceZ"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/competenceR"
+        android:layout_width="174dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="23dp"
+        android:text="competence R"
+        app:layout_constraintTop_toBottomOf="@+id/competenceE"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <EditText
+        android:id="@+id/passif"
+        android:layout_width="174dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="23dp"
+        android:text="passif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/competenceR"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/valider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/retourArriereModif"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toEndOf="@+id/passif"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionChampion"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <Button
+        android:id="@+id/retourArriereModif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toEndOf="@+id/passif"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionChampion"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <ImageView
+        android:id="@+id/iconModifChampion"
+        android:layout_width="90dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionChampion"
+        app:layout_constraintEnd_toStartOf="@+id/nomChampion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Spinner
+        android:id="@+id/roleListModif"
+        android:layout_width="208dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/valider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintStart_toEndOf="@+id/competenceA"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionChampion"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
